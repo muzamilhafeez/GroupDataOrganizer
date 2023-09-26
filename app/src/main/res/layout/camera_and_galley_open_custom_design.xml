@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    app:cardCornerRadius="40dp"
+    android:layout_centerHorizontal="true"
+    android:shape="ring"
+    android:background="@color/grey_10"
+    android:id="@+id/Teacher_cell_click"
+    android:thicknessRatio="1.9"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/btn_gallery_custom"
+            android:background="@color/grey_10"
+            android:layout_weight="1"
+            android:src="@drawable/icon_gallery_custom" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/grey_10"
+            android:id="@+id/btn_camera_custom"
+            android:src="@drawable/custom_icom_camera"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

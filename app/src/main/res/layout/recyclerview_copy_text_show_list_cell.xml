@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/recyclerview_background_cell"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/recyclerview_background_cell"
+        android:layout_height="wrap_content"
+       android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="8"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/txt_view_title"
+            android:layout_height="wrap_content"
+            android:text="Title"/>
+        <ImageView
+            android:id="@+id/imageView_shared"
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:src="@drawable/share_square_line_icon"/>
+        <ImageView
+            android:id="@+id/imageView_edit"
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:src="@drawable/edit__text_icon"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/imageView_copy"
+
+            android:layout_height="30dp"
+            android:src="@drawable/copy_icon"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_view_show"/>
+</LinearLayout>

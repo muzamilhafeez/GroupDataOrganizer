@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewMumber.AddNewMumberFragment">
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="@color/blue_500"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            app:contentInsetStartWithNavigation="0dp"-->
+<!--            app:navigationIcon="@drawable/ic_baseline_keyboard_backspace_24"-->
+<!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/grey_10"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:padding="15dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Information"
+                        android:padding="5dp"
+                        android:background="@color/blue_500"
+                        android:textSize="25dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_user"
+                    app:srcCompat="@drawable/ic_baseline_person" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--        usserid-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/icon_user" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        app:boxStrokeColor="@color/blue_500"
+                        app:hintTextColor="@color/blue_500"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_name"
+                            android:layout_gravity="center"
+                            android:hint="Name" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/city_icon"
+                        app:tint="@color/black" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        app:boxStrokeColor="@color/blue_500"
+                        app:hintTextColor="@color/blue_500"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_user_city"
+                            android:layout_gravity="center"
+                            android:hint="City" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <!--   Role-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/time_selection_icon" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        app:boxStrokeColor="@color/blue_500"
+                        app:hintTextColor="@color/blue_500"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_user_duration"
+                            android:layout_gravity="center"
+                            android:hint="Duration" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!--        stat date         -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Date"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:id="@+id/image_view_start_date"
+                        android:src="@drawable/start_date_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Date"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:id="@+id/image_view_start_end"
+                        android:src="@drawable/start_date_icon"/>
+                </LinearLayout>
+                <!--   Role-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/payment_icon" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        app:boxStrokeColor="@color/blue_500"
+                        app:hintTextColor="@color/blue_500"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_user_pay_fee"
+                            android:layout_gravity="center"
+                            android:hint="Pay fee" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!--   Role-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="5dp"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/icon_phone" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        app:boxStrokeColor="@color/blue_500"
+                        app:hintTextColor="@color/blue_500"
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_user_phone_no"
+                            android:layout_gravity="center"
+                            android:hint="phone number" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!--                BTN SAVE-->
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xlarge"
+                    android:backgroundTint="@color/blue_500"
+                    android:shadowColor="@color/blue_A700"
+                    android:text="SAVE"
+
+                    android:textColor="@android:color/white" />
+
+                <!--                edit end -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_smlarge"
+            android:clickable="true"
+            app:backgroundTint="@color/white"
+            app:elevation="8dp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/lyt_form"
+            app:layout_anchorGravity="top|end|right"
+            app:pressedTranslationZ="12dp"
+            android:id="@+id/floatingbtn_camera_image"
+            app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CopyTextShowListActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Service Name"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-------------*On Mart Click Service*-------------\n03410071708"
+        android:id="@+id/edit_txt_copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/btn_hide_service_text"
+            android:text="Hide"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show List Top Screen "
+            android:layout_marginLeft="10dp"
+            android:id="@+id/brn_new_windows"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Recycerview_Text_Show"/>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/linear_dialog_box"-->
+<!--            android:background="@drawable/recyclerview_background_cell"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/edit_show_icon" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:text="Edit text"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="26sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:layout_marginTop="14dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:text="Everything is working"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+<!--        </LinearLayout>-->
+<!--            <Button-->
+<!--                android:background="@drawable/button_gradient"-->
+<!--                android:id="@+id/btnDialog"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:text="Save"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_alignBottom="@id/linear_dialog_box"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+<!--    </RelativeLayout>-->
+
+</LinearLayout>
